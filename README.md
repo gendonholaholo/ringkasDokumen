@@ -30,8 +30,3 @@ Pastikan Ollama sudah terinstall
     ```
 
 Teks akan diekstrak dari PDF dan dianalisis menggunakan model llama3.2. Teks yang diekstrak akan disimpan di direktori `Output` yang terletak di direktori yang sama dengan skrip
-
-## Versi Portable
-1. Download
-2. Buka via terminal/cmd/powershell bebas
-3. `portableScript.exe path/to/your/file.pdf`
