@@ -12,12 +12,12 @@ Pastikan Ollama sudah terinstall
     cd ringkasDokumen
     ```
 
-2. Install the dependencies:
+2. Install dependencies:
     ```powershell
     pip install -r requirements.txt
     ```
 
-3. Ensure you have Ollama installed and the llama3.2 model pulled:
+3. Pastikan Anda telah menginstal Ollama dan mengunduh model llama3.2.:
     ```powershell
     ollama pull llama3.2
     ```
