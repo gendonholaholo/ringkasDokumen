@@ -9,7 +9,7 @@ Pastikan Ollama sudah terinstall
 1. Clone repository:
     ```powershell
     git clone https://github.com/your-username/repository-name.git
-    cd repository-name
+    cd ringkasDokumen
     ```
 
 2. Install the dependencies:
