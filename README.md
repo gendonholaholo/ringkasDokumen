@@ -1,32 +1,32 @@
-# Ringkas Dokumen
-Buat yang malas baca, gunain aja ini buat ambil substansi dari e-book &amp; pdf lainnya.
+# PDF to Text Extractor and Analyzer
 
-## Penting!
-Pastikan Ollama sudah terinstall
+## Deskripsi
+Proyek ini adalah sebuah alat yang dapat mengekstrak teks dari file PDF, menyimpannya dalam format TXT, dan menganalisis teks tersebut menggunakan model Ollama Llama3.2 untuk menghasilkan ringkasan dokumen. Program ini juga secara otomatis memeriksa dan menginstal dependensi yang diperlukan (Poppler dan Ollama) jika belum terpasang.
 
-## Installation
+## Instalasi
+### Prasyarat
+- **Scoop**: Manajer paket untuk Windows.
+- **g++**: Kompiler C++.
 
-1. Clone repository:
+### Langkah-langkah
+1. **Clone repositori ini**:
     ```powershell
-    git clone https://github.com/your-username/repository-name.git
+    git clone https://github.com/gendonholaholo/ringkasDokumen.git
     cd ringkasDokumen
     ```
 
-2. Install dependencies:
+2. **Kompilasi Program**:
     ```powershell
-    pip install -r requirements.txt
-    ```
-
-3. Pastikan Anda telah menginstal Ollama dan mengunduh model llama3.2.:
-    ```powershell
-    ollama pull llama3.2
+    g++ -o gos_ringkasin gos_ringkasin.cpp
     ```
 
 ## Penggunaan
-
-1. Jalankan script dengan lokasi path file.pdf (beri nama pada .pdf tanpa spasi):
+1. **Jalankan Program**:
     ```powershell
-    python.exe script.py path/to/your/file.pdf
+    ./gos_ringkasin.exe path/to/your/file.pdf
     ```
-
-Teks akan diekstrak dari PDF dan dianalisis menggunakan model llama3.2. Teks yang diekstrak akan disimpan di direktori `Output` yang terletak di direktori yang sama dengan skrip
+    Program akan melakukan hal berikut:
+    - Memeriksa dan menginstal Poppler dan Ollama jika belum terpasang.
+    - Menarik model Llama3.2 jika belum tersedia.
+    - Mengekstrak teks dari PDF dan menyimpannya di direktori output.
+    - Menganalisis teks yang diekstrak menggunakan Ollama.
