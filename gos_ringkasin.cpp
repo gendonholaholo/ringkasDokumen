@@ -22,7 +22,7 @@ void installSoftware() {
 
     if (!isCommandAvailable("ollama")) {
         cout << "Ollama not found. Installing..." << endl;
-        system("powershell -Command \"Invoke-WebRequest -Uri https://ollama.com/install.sh -OutFile install.sh; ./install.sh\"");
+        system("powershell -Command \"scoop install ollama\"");
     } else {
         cout << "Ollama is already installed." << endl;
     }
